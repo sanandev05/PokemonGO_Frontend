@@ -1,58 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\",
+  "WorkspaceRootPath": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\controller\\cathingpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\cathingpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\ThrowBall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Pokeball\\ThrowBall.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\controller\\encountertrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\encountertrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Game\\GameManager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\game\\wildpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\wildpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|c:\\users\\icomp\\documents\\unity projects\\pokemongo_unity3d\\assets\\scripts\\pokeball\\pakeballthrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokeball\\pakeballthrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\EncounterTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Controller\\EncounterTrigger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CathingPokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Controller\\CathingPokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\pokeball\\pokeball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokeball\\pokeball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CharacterController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\uiscripts\\trainerprofileui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\trainerprofileui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\Pokeball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Pokeball\\Pokeball.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\dtos\\trainerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dtos\\trainerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\WildPokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Game\\WildPokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\controller\\newuserregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\newuserregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\TrainerDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\DTOs\\TrainerDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\dtos\\pokemondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\dtos\\pokemondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\PokemonDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\DTOs\\PokemonDTO.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\controller\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\NewUserRegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Controller\\NewUserRegistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CharacterController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Controller\\CharacterController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CameraFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\Controller\\CameraFollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\uiscripts\\scenetrans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uiscripts\\scenetrans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\SceneTrans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Scripts\\UIScripts\\SceneTrans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,15 +61,92 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "ThrowBall.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\ThrowBall.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Pokeball\\ThrowBall.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\ThrowBall.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Pokeball\\ThrowBall.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-26T14:17:01.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\GameManager.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:55:18.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WildPokemon.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\WildPokemon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\WildPokemon.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\WildPokemon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Game\\WildPokemon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:54:42.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EncounterTrigger.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\EncounterTrigger.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\EncounterTrigger.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\EncounterTrigger.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Controller\\EncounterTrigger.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:27:06.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CathingPokemon.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CathingPokemon.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\CathingPokemon.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CathingPokemon.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Controller\\CathingPokemon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-25T11:21:14.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TrainerProfileUI.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-24T16:59:55.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Pokeball.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\Pokeball.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\Pokeball.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Pokeball\\Pokeball.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\Pokeball.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\Pokeball.cs",
               "RelativeToolTip": "Assets\\Scripts\\Pokeball\\Pokeball.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -78,88 +154,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PakeballThrower.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\PakeballThrower.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Pokeball\\PakeballThrower.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Pokeball\\PakeballThrower.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Pokeball\\PakeballThrower.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:58:12.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GameManager.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\GameManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\GameManager.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\GameManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Game\\GameManager.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAowEcAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:55:18.202Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WildPokemon.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\WildPokemon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Game\\WildPokemon.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Game\\WildPokemon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Game\\WildPokemon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:54:42.393Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EncounterTrigger.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\EncounterTrigger.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\EncounterTrigger.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\EncounterTrigger.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Controller\\EncounterTrigger.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:27:06.118Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CathingPokemon.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CathingPokemon.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\CathingPokemon.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CathingPokemon.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Controller\\CathingPokemon.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAgwBwAAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:21:14.158Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TrainerProfileUI.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs",
-              "RelativeToolTip": "Assets\\Scripts\\UIScripts\\TrainerProfileUI.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAASwDYAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-24T16:59:55.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "TrainerDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\TrainerDTO.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\TrainerDTO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DTOs\\TrainerDTO.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\TrainerDTO.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\TrainerDTO.cs",
               "RelativeToolTip": "Assets\\Scripts\\DTOs\\TrainerDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -169,9 +168,9 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "PokemonDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\PokemonDTO.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\PokemonDTO.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\DTOs\\PokemonDTO.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\PokemonDTO.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\DTOs\\PokemonDTO.cs",
               "RelativeToolTip": "Assets\\Scripts\\DTOs\\PokemonDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -179,11 +178,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "NewUserRegistration.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\NewUserRegistration.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\NewUserRegistration.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\NewUserRegistration.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\NewUserRegistration.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\NewUserRegistration.cs",
               "RelativeToolTip": "Assets\\Scripts\\Controller\\NewUserRegistration.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAADgv1IAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -191,11 +190,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "CameraFollow.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CameraFollow.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CameraFollow.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\CameraFollow.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CameraFollow.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CameraFollow.cs",
               "RelativeToolTip": "Assets\\Scripts\\Controller\\CameraFollow.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAQwCEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -203,23 +202,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 5,
               "Title": "CharacterController.cs",
               "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CharacterController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Controller\\CharacterController.cs",
               "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CharacterController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Controller\\CharacterController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T14:13:08.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T14:13:08.518Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
               "Title": "SceneTrans.cs",
-              "DocumentMoniker": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\SceneTrans.cs",
+              "DocumentMoniker": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\SceneTrans.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UIScripts\\SceneTrans.cs",
-              "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\SceneTrans.cs",
+              "ToolTip": "D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Scripts\\UIScripts\\SceneTrans.cs",
               "RelativeToolTip": "Assets\\Scripts\\UIScripts\\SceneTrans.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
