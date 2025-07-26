@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\controller\\cathingpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|c:\\users\\icomp\\documents\\unity projects\\pokemongo_unity3d\\assets\\scripts\\controller\\cathingpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\cathingpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\game\\wildpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|c:\\users\\icomp\\documents\\unity projects\\pokemongo_unity3d\\assets\\scripts\\pokeball\\pakeballthrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\assets\\scripts\\pokeball\\pakeballthrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{026C84A4-F45C-241E-1BCB-2709E479A69C}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pokeball\\pakeballthrower.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -86,8 +86,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Pokeball\\PakeballThrower.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:58:12.456Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-25T11:58:12.456Z"
             },
             {
               "$type": "Document",
@@ -99,8 +98,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Game\\GameManager.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAowEcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:55:18.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-25T11:55:18.202Z"
             },
             {
               "$type": "Document",
@@ -112,8 +110,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Game\\WildPokemon.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:54:42.393Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-25T11:54:42.393Z"
             },
             {
               "$type": "Document",
@@ -125,8 +122,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Controller\\EncounterTrigger.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-25T11:27:06.118Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-25T11:27:06.118Z"
             },
             {
               "$type": "Document",
@@ -210,8 +206,7 @@
               "ToolTip": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Unity3D\\Assets\\Scripts\\Controller\\CharacterController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Controller\\CharacterController.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T14:13:08.518Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-21T14:13:08.518Z"
             },
             {
               "$type": "Document",
