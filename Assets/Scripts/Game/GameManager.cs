@@ -159,6 +159,7 @@ public class GameManager : MonoBehaviour
             {
                 Debug.Log(pokemonToCatch.pokemonName + " has been caught!");
                 Destroy(pokemonToCatch.gameObject); // Pokemonu səhnədən sil
+
                 // Tutulan Pokémonu oyunçu inventarına əlavə etmək kimi digər məntiqi burada əlavə edin
             }
             else

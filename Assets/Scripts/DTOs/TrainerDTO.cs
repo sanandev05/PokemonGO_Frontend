@@ -7,6 +7,8 @@ public class TrainerDTO
     public string AvatarUrl { get; set; } = "https://example.com/default-avatar.png";
     public int Level { get; set; }
     public int Experience { get; set; }
+    public int MaxXP { get; set; }
+    public int CurrentXP { get; set; }
     public decimal Gold { get; set; }
 
 
