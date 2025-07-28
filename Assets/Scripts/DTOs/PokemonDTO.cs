@@ -10,6 +10,7 @@ public record PokemonDTO
     public int Level { get; set; }
     public int MaxHP { get; set; }
     public int CurrentHP { get; set; }
+    public int AttackPower { get; set; }
 
     public int CategoryId { get; set; }
     public List<int>? TrainerIds { get; set; }

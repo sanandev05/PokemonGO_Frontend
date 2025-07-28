@@ -2,34 +2,44 @@
 
 public class CameraFollow : MonoBehaviour
 {
-    [Header("Target Settings")]
-    public Transform target;                   // Your player
+    public Transform target; // Oyunçuya bağlı kamera üçün
+    public Vector3 offset = new Vector3(0, 5, -7);
 
-    [Header("Camera Offset")]
-    public Vector3 offset = new Vector3(0, 3f, -6f); // Default camera distance
+    public float panSpeed = 20f;
+    public float rotateSpeed = 70f;
+    public float zoomSpeed = 10f;
 
-    [Header("Smoothing Settings")]
-    [Range(0f, 1f)] public float positionSmooth = 0.15f;   // Lower = smoother
-    [Range(0f, 1f)] public float rotationSmooth = 0.1f;
+    private float currentZoom = 10f;
+    private float currentYaw = 0f;
 
-    private Vector3 velocity = Vector3.zero;
-
-    void LateUpdate()
+    void Update()
     {
-        if (target == null)
-            return;
+        // Zoom (Mouse wheel)
+        float zoomChange = Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
+        currentZoom = Mathf.Clamp(currentZoom - zoomChange, 5f, 20f);
 
-        // STEP 1: Rotate offset based on player's facing direction
-        Vector3 rotatedOffset = target.rotation * offset;
+        // Pan (WASD or arrow keys)
+        float horizontal = Input.GetAxis("Horizontal"); // A,D və ya sol, sağ oxları
+        float vertical = Input.GetAxis("Vertical");     // W,S və ya yuxarı, aşağı oxları
 
-        // STEP 2: Target position is offset behind the player
-        Vector3 desiredPosition = target.position + rotatedOffset;
+        Vector3 panMovement = transform.right * horizontal + transform.forward * vertical;
+        panMovement.y = 0; // Y oxunda hərəkət etməsin (səth boyunca)
+        transform.position += panMovement * panSpeed * Time.deltaTime;
 
-        // STEP 3: Smoothly move camera to desired position
-        transform.position = Vector3.SmoothDamp(transform.position, desiredPosition, ref velocity, positionSmooth);
+        // Rotate (Mouse sağ klik basılı saxlayıb sürüşdür)
+        if (Input.GetMouseButton(1))
+        {
+            float mouseX = Input.GetAxis("Mouse X");
+            currentYaw += mouseX * rotateSpeed * Time.deltaTime;
+        }
 
-        // STEP 4: Smoothly rotate camera to look at player
-        Quaternion targetRotation = Quaternion.LookRotation(target.position - transform.position);
-        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSmooth);
+        transform.rotation = Quaternion.Euler(30, currentYaw, 0); // 30 dərəcə yuxarı baxış, fırlanma yaw
+
+        // Kameranın mövqeyini oyunçuya görə yenilə (offset ilə zoom ilə)
+        if (target != null)
+        {
+            Vector3 desiredPosition = target.position - transform.forward * currentZoom + new Vector3(0, currentZoom / 2f, 0);
+            transform.position = Vector3.Lerp(transform.position, desiredPosition, Time.deltaTime * 5f);
+        }
     }
 }
