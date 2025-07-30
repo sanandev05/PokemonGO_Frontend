@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using UnityEngine;
 using UnityEngine.Networking;
 
 public class GenericApiService<T> where T : class
@@ -31,8 +32,8 @@ public class GenericApiService<T> where T : class
 
     public async Task<T> CreateAsync(T data)
     {
-        string jsonData= JsonConvert.SerializeObject(data);
-        byte[] bodyRaw =Encoding.UTF8.GetBytes(jsonData);
+        string jsonData = JsonConvert.SerializeObject(data);
+        byte[] bodyRaw = Encoding.UTF8.GetBytes(jsonData);
 
         using (UnityWebRequest request = UnityWebRequest.PostWwwForm(_baseUrl, "POST"))
         {
@@ -43,9 +44,9 @@ public class GenericApiService<T> where T : class
             var result = await request.SendWebRequestAsync();
             return JsonConvert.DeserializeObject<T>(result.downloadHandler.text);
         }
-    } 
+    }
 
-    public async Task<T> UpdateAsync(T data,int id)
+    public async Task<T> UpdateAsync(T data, int id)
     {
         string json = JsonConvert.SerializeObject(data);
         byte[] bodyRaw = Encoding.UTF8.GetBytes(json);
@@ -56,6 +57,7 @@ public class GenericApiService<T> where T : class
             request.SetRequestHeader("Content-Type", "application/json");
 
             var result = await request.SendWebRequestAsync();
+            PlayerPrefs.SetString("TrainerInfo", json);
             return JsonConvert.DeserializeObject<T>(result.downloadHandler.text);
         }
     }
@@ -66,5 +68,13 @@ public class GenericApiService<T> where T : class
         {
             await request.SendWebRequestAsync();
         }
+    }
+
+    public TrainerDTO GetLocalCurrentTrainerDto()
+    {
+        var trainerJsonData = PlayerPrefs.GetString("TrainerInfo");
+        var convertedData = JsonConvert.DeserializeObject<TrainerDTO>(trainerJsonData);
+
+        return convertedData;
     }
 }

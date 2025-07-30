@@ -1,65 +1,109 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class ThrowBall : MonoBehaviour
 {
-    private Vector3 screenPoint;
-    private Vector3 offset;
+    private Vector3 startMousePos;
+    private Vector3 endMousePos;
     private Rigidbody rb;
-    public float throwForce = 500f; // Atma gücü, ehtiyaca görə tənzimləyin
+    private bool isThrown = false;
+    private bool hasHit = false;
 
-    private bool isDragging = false; // Topun sürüklənib-sürüklənmədiyini izləmək üçün
+    [SerializeField] private float throwForce = 10f;
 
-    void OnEnable() // Skript aktivləşdiriləndə çağırılır (GameManager tərəfindən)
+    private GenericApiService<TrainerDTO> _service;
+    private GenericApiService<PokemonDTO> _pokemonService;
+
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        // Topu yenidən yerləşdirəndə əvvəlki sürətini təmizləyin
-        rb.velocity = Vector3.zero;
-        rb.angularVelocity = Vector3.zero;
-        rb.isKinematic = false; // Mouse ilə tutula bilməsi üçün fizikanı aktiv et
+        _service = new GenericApiService<TrainerDTO>(ConstDatas.TrainerApiUrl);
+        _pokemonService = new GenericApiService<PokemonDTO>(ConstDatas.PokemonApiUrl);
     }
 
-    void OnMouseDown()
+    private void OnMouseDown()
     {
-        // Yalnız bu skript aktivdirsə və GameManager tutma prosesindədirsə işləsin
-        if (this.enabled && GameManager.Instance != null && GameManager.Instance.inCatchSequence)
-        {
-            isDragging = true;
-            screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
-            offset = gameObject.transform.position - Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z));
-            rb.isKinematic = true; // Topu mouse ilə idarə etmək üçün fizikanı bağla (hərəkətsiz et)
-        }
+        if (isThrown) return;
+        startMousePos = Input.mousePosition;
     }
 
-    void OnMouseDrag()
+    private void OnMouseUp()
     {
-        if (isDragging)
-        {
-            Vector3 cursorScreenPoint = new Vector3(Input.mousePosition.x, Input.mousePosition.y, screenPoint.z);
-            Vector3 cursorWorldPoint = Camera.main.ScreenToWorldPoint(cursorScreenPoint) + offset;
-            transform.position = cursorWorldPoint; // Topu mouse kursorunun mövqeyinə daşı
-        }
+        if (isThrown) return;
+        endMousePos = Input.mousePosition;
+
+        Vector3 direction = (endMousePos - startMousePos).normalized;
+        float dragDistance = Vector3.Distance(endMousePos, startMousePos);
+        Vector3 force = new Vector3(direction.x, direction.y, 1f) * dragDistance * throwForce;
+
+        rb.isKinematic = false;
+        rb.AddForce(Camera.main.transform.TransformDirection(force));
+        isThrown = true;
     }
 
-    void OnMouseUp()
+    private async void OnCollisionEnter(Collision collision)
     {
-        if (isDragging)
-        {
-            rb.isKinematic = false; // Topu sərbəst burax və fizikanı aç
-            Vector3 throwDirection = Camera.main.transform.forward; // Kameranın irəli istiqamətində atma
-            rb.AddForce(throwDirection * throwForce); // Topa atma qüvvəsi tətbiq et
-            isDragging = false; // Sürükləmə bitdi
+        if (hasHit || !collision.gameObject.CompareTag("WildPokemon"))
+            return;
 
-            // Top atıldıqdan sonra bu skripti deaktiv edin ki, təkrar atılmasın və GameManager idarə etsin
-            this.enabled = false;
+        hasHit = true;
+        Debug.Log("🎯 Pokémon tutuldu: " + collision.gameObject.name);
+
+        // Pokémon adını səhnədən düzgün çıxar
+        string collidedName = collision.gameObject.name.Split('(')[0].Trim(); // "Pikachu(Clone)" → "Pikachu"
+        Debug.Log("🔍 Tapılan Pokémon adı: " + collidedName);
+
+        // Pokémon-u backend-dən tap
+        var allPokemons = await _pokemonService.GetAllAsync();
+        var matchedPokemon = allPokemons.FirstOrDefault(p => p.Name.Equals(collidedName, System.StringComparison.OrdinalIgnoreCase));
+
+        if (matchedPokemon == null)
+        {
+            Debug.LogError("❌ Pokémon backend-də tapılmadı: " + collidedName);
+            return;
         }
+
+        // Mövcud treneri götür
+        var trainer = _service.GetLocalCurrentTrainerDto();
+        if (trainer == null)
+        {
+            Debug.LogError("❌ Lokal trainer tapılmadı!");
+            return;
+        }
+
+        // Əlavə et və göndər
+        if (!trainer.PokemonIds.Contains(matchedPokemon.Id))
+        {
+            trainer.PokemonIds.Add(matchedPokemon.Id);
+            await _service.UpdateAsync(trainer, trainer.Id);
+            Debug.Log("✅ Trainer güncəlləndi. Yeni Pokémon əlavə olundu: " + matchedPokemon.Name);
+        }
+        else
+        {
+            Debug.Log("ℹ️ Bu Pokémon artıq trainerdə var.");
+        }
+
+        AddXPAndMoney();
+        Destroy(collision.gameObject);   // Pokémon sil
+        Destroy(gameObject);             // Pokéball sil
+        SceneManager.LoadScene("Game");  // Oyun səhnəsinə qayıt
     }
 
-    void OnCollisionEnter(Collision collision)
+    private void AddXPAndMoney()
     {
-        // Yalnız bu skript aktivdirsə və hələ də tutma prosesindəyiksə
-        if (this.enabled && GameManager.Instance != null && GameManager.Instance.inCatchSequence)
+        GameObject lmObject = GameObject.FindGameObjectWithTag("LevelManager");
+        if (lmObject != null)
         {
-            GameManager.Instance.OnPokeballHit(collision.gameObject); // GameManager-ə topun nəyə dəydiyini bildir
+            LevelManager levelManager = lmObject.GetComponent<LevelManager>();
+            levelManager.AddXPAndCheckXP(200);
+            levelManager.AddMoney(40);
         }
+        else
+        {
+            Debug.LogError("❌ LevelManager tapılmadı! Tag düzgün təyin olunmayıb?");
+        }
+
     }
 }

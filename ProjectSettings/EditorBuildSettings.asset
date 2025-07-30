@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BattleScene.unity
     guid: ffa3f3724387e4743b5dff626758be3c
+  - enabled: 1
+    path: Assets/Scenes/CaptureScene.unity
+    guid: f8819428e24bf8f488cc3acae0d3ced5
   m_configObjects: {}

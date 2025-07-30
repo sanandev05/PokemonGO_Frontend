@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 
 [RequireComponent(typeof(NavMeshAgent))]
 public class PlayerNavMeshController : MonoBehaviour
@@ -13,6 +14,11 @@ public class PlayerNavMeshController : MonoBehaviour
         if (animator == null)
         {
             animator = GetComponentInChildren<Animator>();
+        }
+
+        if(PlayerData.LastPosition != Vector3.zero)
+        {
+            SpawnPlayerPreviousPoint();
         }
     }
 
@@ -33,5 +39,24 @@ public class PlayerNavMeshController : MonoBehaviour
 
         // Jump idarəsi əlavə etmək çətin ola bilər, çünki NavMeshAgent jump-u özbaşına idarə etmir
         // Lazım olsa ayrıca jump animasiyasını trigger etmək üçün əlavə kod yazılmalıdır
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Pokemon"))
+        {
+            Debug.Log("Entered Pokémon zone!");
+
+            // Tutulacaq pokemonun məlumatını müvəqqəti yadda saxla
+            PlayerPrefs.SetString("EncounteredPokemonId", other.GetComponent<WildPokemon>().PokemonId.ToString());
+
+            // CaptureScene yüklə
+            SceneManager.LoadScene("CaptureScene");
+        }
+    }
+
+    public void SpawnPlayerPreviousPoint()
+    {
+        gameObject.gameObject.transform.position = PlayerData.LastPosition;
+        PlayerData.LastPosition = Vector3.zero;
     }
 }

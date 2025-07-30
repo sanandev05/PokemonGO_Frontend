@@ -66,7 +66,7 @@ public class TrainerProfileUI : MonoBehaviour
     private void UpdateUI(TrainerDTO trainer)
     {
         trainerNameText.text = trainer.Name;
-        levelText.text = "LEVEL: " + trainer.Level.ToString();
+        levelText.text =  trainer.Level.ToString();
         goldText.text = "GOLD: " + trainer.Gold.ToString("0.00");
     }
 }

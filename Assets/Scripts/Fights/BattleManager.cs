@@ -1,159 +1,198 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Linq;
 using TMPro;
-using UnityEngine.UI;
+using System.Collections;
 using UnityEngine.SceneManagement;
-using System.Collections.Generic;
-using System.Threading.Tasks;
+using UnityEngine.UI;
+
 
 public class BattleManager : MonoBehaviour
 {
-    [Header("Battle UI Elements")]
+    public Transform wildPokemonSpawnPoint;
+    public Transform playerPokemonSpawnPoint;
+
+    public string[] allPossiblePokemonNames;
+
+    private GenericApiService<PokemonDTO> _pokemonService;
+    private GenericApiService<TrainerDTO> _trainerService;
+
+    //Battle 
+    public GameObject playerAttackParticle;
+    public GameObject enemyAttackParticle;
+
+    public TextMeshProUGUI logText;
     public TextMeshProUGUI playerHPText;
     public TextMeshProUGUI enemyHPText;
-    public TextMeshProUGUI battleLogText;
-    public Button fightButton;
+    public Button attackButton;
 
-    [Header("Battle Settings")]
-    public int playerAttackDamage = 10;
-    public int enemyAttackDamage = 8;
-    public string worldSceneName = "WorldScene"; // Döyüş bitəndən sonra qayıdılacaq səhnə adı
+    private Animator playerAnimator;
+    private Animator enemyAnimator;
 
-    private bool battleEnded = false;
+    private int playerHP = 100;
+    private int enemyHP = 100;
+    private int playerAttackPower = 20;
+    private int enemyAttackPower = 20;
 
-    private PokemonDTO playerPokemon;
-    private PokemonDTO enemyPokemon;
-
-    private GenericApiService<PokemonDTO> pokemonService;
-    private GenericApiService<TrainerDTO> trainerService;
-
-    public GameObject attackEffectPrefab;
-
-    public Transform playerAttackOrigin;
-    public Transform enemyAttackOrigin;
-
-    public Transform playerTarget; // yəni Enemy
-    public Transform enemyTarget;  // yəni Player
+    private bool playerTurn = true;
 
     private async void Start()
     {
-        fightButton.interactable = false;
-        battleLogText.text = "Loading Pokémon from server...";
+        _pokemonService = new GenericApiService<PokemonDTO>(ConstDatas.PokemonApiUrl);
+        _trainerService = new GenericApiService<TrainerDTO>(ConstDatas.TrainerApiUrl);
 
-        // API bağlantısı
-        pokemonService = new GenericApiService<PokemonDTO>(ConstDatas.PokemonApiUrl);
-        trainerService = new GenericApiService<TrainerDTO>(ConstDatas.TrainerApiUrl);
-        // Pokémon-ları çək
-        List<PokemonDTO> pokemons = await pokemonService.GetAllAsync();
+        InitAsync();
+        UpdateUI();
+        InvokeRepeating("EnemyAttack", 0.5f, 3.5f);
 
-        if (pokemons == null || pokemons.Count < 2)
+        Log("Battle Started!");
+    }
+
+    private async void InitAsync()
+    {
+
+        Debug.Log("🎮 Player battle zonaya daxil oldu");
+
+        // 1. Təsadüfi Pokémon seç (backend-dən)
+        var allPokemons = await _pokemonService.GetAllAsync();
+        var randomPokemon = allPokemons[Random.Range(0, allPokemons.Count)];
+        Debug.Log("🎲 Wild Pokémon seçildi: " + randomPokemon.Name);
+
+        enemyHP = randomPokemon.MaxHP;
+        enemyAttackPower = randomPokemon.AttackPower;
+
+        var sceneWildPokeObject = new GameObject();
+        // 2. Prefab yüklə
+        GameObject wildPrefab = Resources.Load<GameObject>("PokemonPrefabs/" + randomPokemon.Name.Trim());
+        if (wildPrefab != null)
         {
-            battleLogText.text = "Failed to load Pokémon from API!";
-            return;
+            sceneWildPokeObject = Instantiate(wildPrefab, wildPokemonSpawnPoint.position, Quaternion.Euler(0, 180, 0));
+            enemyAnimator = sceneWildPokeObject.GetComponent<Animator>();
+        }
+        else
+        {
+            Debug.LogError("🚫 Wild prefab tapılmadı: " + randomPokemon.Name);
         }
 
-        playerPokemon = pokemons[0];
-        playerPokemon.CurrentHP = playerPokemon.MaxHP;
-
-        enemyPokemon = pokemons[1];
-        enemyPokemon.CurrentHP = enemyPokemon.MaxHP;
-
-        playerAttackDamage = playerPokemon.AttackPower;
-        enemyAttackDamage = enemyPokemon.AttackPower;
-        UpdateBattleUI();
-
-        if (fightButton != null)
-            fightButton.onClick.AddListener(OnFightClicked);
-
-        battleLogText.text = $"{playerPokemon.Name} VS {enemyPokemon.Name}\nClick 'Fight' to start!";
-        fightButton.interactable = true;
-    }
-    
-    public void PlayerAttack()
-    {
-        SpawnAttackEffect(playerAttackOrigin, playerTarget);
-        // buraya damage hesablama və animasiya əlavə edə bilərsən
-    }
-
-    public void EnemyAttack()
-    {
-        SpawnAttackEffect(enemyAttackOrigin, enemyTarget);
-        // damage və animasiya da buraya
-    }
-
-    void SpawnAttackEffect(Transform from, Transform to)
-    {
-        GameObject effect = Instantiate(attackEffectPrefab, from.position, Quaternion.identity);
-        AttackEffectController controller = effect.GetComponent<AttackEffectController>();
-        controller.target = to;
-    }
-    private void OnFightClicked()
-    {
-        if (battleEnded) return;
-        StartCoroutine(BattleTurn());
-    }
-
-    private IEnumerator BattleTurn()
-    {
-        fightButton.interactable = false;
-
-        // Player hücumu
-        enemyPokemon.CurrentHP -= playerAttackDamage;
-        if (enemyPokemon.CurrentHP < 0) enemyPokemon.CurrentHP = 0;
-
-        battleLogText.text = $"{playerPokemon.Name} attacks {enemyPokemon.Name} for {playerAttackDamage} damage!";
-        UpdateBattleUI();
-
-        yield return new WaitForSeconds(1f);
-
-        if (enemyPokemon.CurrentHP == 0)
+        // 3. Oyunçunun Pokémonu spawn et
+        var trainer = _trainerService.GetLocalCurrentTrainerDto();
+        if (trainer.PokemonIds.Any())
         {
-            EndBattle(true);
-            yield break;
+            var firstPokemon = (await _pokemonService.GetAllAsync()).FirstOrDefault(p => p.Id == trainer.PokemonIds[0]);
+            if (firstPokemon != null)
+            {
+                playerHP = firstPokemon.MaxHP; // Oyunçunun Pokémonunun HP-sini təyin et
+                playerAttackPower = firstPokemon.AttackPower;
+                GameObject playerPrefab = Resources.Load<GameObject>("PokemonPrefabs/" + firstPokemon.Name.Trim());
+                if (playerPrefab != null)
+                {
+                    var scenePlayerPokeObject = Instantiate(playerPrefab, playerPokemonSpawnPoint.position, Quaternion.identity);
+                    Debug.Log("🎮 Player Pokémon spawn edildi: " + firstPokemon.Name);
+                    playerAnimator = scenePlayerPokeObject.GetComponent<Animator>();
+
+                }
+                else
+                {
+                    Debug.LogError("🚫 Player prefab tapılmadı: " + firstPokemon.Name);
+                }
+            }
         }
 
-        // Enemy hücumu
-        playerPokemon.CurrentHP -= enemyAttackDamage;
-        if (playerPokemon.CurrentHP < 0) playerPokemon.CurrentHP = 0;
+        // 4. İstəyə görə döyüş UI və ya scene yüklə
+        // SceneManager.LoadScene("BattleScene"); // əgər ayrıca səhnədirsə
 
-        battleLogText.text = $"{enemyPokemon.Name} attacks {playerPokemon.Name} for {enemyAttackDamage} damage!";
-        UpdateBattleUI();
+    }
 
-        yield return new WaitForSeconds(1f);
+    public void OnAttackButton()
+    {
+        StartCoroutine(PlayerAttack());
+    }
 
-        if (playerPokemon.CurrentHP == 0)
+    IEnumerator PlayerAttack()
+    {
+        if (attackButton.interactable)
         {
-            EndBattle(false);
-            yield break;
+            attackButton.interactable = false;
+
+            playerAnimator.SetTrigger("Attack");
+            Instantiate(playerAttackParticle, wildPokemonSpawnPoint.transform.position + Vector3.up, Quaternion.identity);
+
+            enemyHP -= Random.Range(10, playerAttackPower);
+            Log($"Your Pokemon attacked! The opponent heart: {enemyHP}");
+            UpdateUI();
+
+            if (enemyHP <= 0)
+            {
+                Log("You won!");
+                BackToScene(true);
+                yield break;
+            }
+
+            yield return new WaitUntil(() =>
+                playerAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Idle") ||
+                playerAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime >= 1f);
+
+            attackButton.interactable = true;
+        }
+    }
+
+
+
+    void EnemyAttack()
+    {
+
+        enemyAnimator.SetTrigger("Attack");
+
+        Instantiate(
+            enemyAttackParticle,
+            playerPokemonSpawnPoint.transform.position + Vector3.up,
+            Quaternion.identity
+        );
+
+        int damage = Random.Range(10, enemyAttackPower);
+        playerHP -= damage;
+
+        Log($"Opponent attacked! It dealt {damage} damage. Your HP: {playerHP}");
+        UpdateUI();
+
+        if (playerHP <= 0)
+        {
+            Log("Your Pokemon lost!");
+            BackToScene(false);
+        }
+    }
+
+    private void BackToScene(bool win)
+    {
+        if (win)
+        {
+            GameObject lmObject = GameObject.FindGameObjectWithTag("LevelManager");
+            if (lmObject != null)
+            {
+                LevelManager levelManager = lmObject.GetComponent<LevelManager>();
+                levelManager.AddXPAndCheckXP(500);
+                levelManager.AddMoney(150);
+            }
+            else
+            {
+                Debug.LogError("❌ LevelManager tapılmadı! Tag düzgün təyin olunmayıb?");
+            }
+
         }
 
-        fightButton.interactable = true;
+        SceneManager.LoadScene("Game");
+
     }
 
-    private void UpdateBattleUI()
-    {
-        if (playerHPText != null)
-            playerHPText.text = $"{playerPokemon.Name} HP: {playerPokemon.CurrentHP}/{playerPokemon.MaxHP}";
 
-        if (enemyHPText != null)
-            enemyHPText.text = $"{enemyPokemon.Name} HP: {enemyPokemon.CurrentHP}/{enemyPokemon.MaxHP}";
+    void UpdateUI()
+    {
+        playerHPText.text = "Your heart: " + playerHP;
+        enemyHPText.text = "Opponent heart: " + enemyHP;
     }
 
-    private void EndBattle(bool playerWon)
+    void Log(string message)
     {
-        battleEnded = true;
-        fightButton.interactable = false;
-
-        if (battleLogText != null)
-            battleLogText.text = playerWon ? "You won the battle!" : "You lost the battle!";
-
-        //trainerService
-        StartCoroutine(ReturnToWorldSceneAfterDelay(3f));
-    }
-
-    private IEnumerator ReturnToWorldSceneAfterDelay(float delay)
-    {
-        yield return new WaitForSeconds(delay);
-        SceneManager.LoadScene(worldSceneName);
+        logText.text = message + "\n";
     }
 }
+

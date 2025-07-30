@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Pokemon
+  - WildPokemon
+  - LevelManager
   layers:
   - Default
   - TransparentFX

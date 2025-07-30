@@ -61,8 +61,8 @@ public class ProfileUI : MonoBehaviour
     private void FillUIData(TrainerDTO trainerDTO)
     {
        nameTxt.text = trainerDTO.Name;
-        levelTxt.text ="LEVEL:"+ trainerDTO.Level.ToString();
-        goldTxt.text = "GOLD:" + trainerDTO.Gold.ToString();
+        levelTxt.text = trainerDTO.Level.ToString();
+        goldTxt.text = trainerDTO.Gold.ToString();
         currentXPTxt.text = trainerDTO.CurrentXP.ToString()+"/";
         maxXPTxt.text = trainerDTO.MaxXP.ToString();
 
