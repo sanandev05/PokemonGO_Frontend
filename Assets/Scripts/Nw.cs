@@ -6,6 +6,7 @@ public class Nw : MonoBehaviour
 {
     // Start is called before the first frame update
     private LevelManager levelManager;
+    public GameObject notfication;
     void Start()
     {
         levelManager = new LevelManager();
@@ -24,6 +25,12 @@ public class Nw : MonoBehaviour
         {
             levelManager.AddXPAndCheckXP(100);
             Debug.Log("Added XP");
+        }
+
+        if (Input.GetKeyDown(KeyCode.M))
+        {
+            notfication.SetActive(true);
+            GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>().ShowNotification("This is a test notification.");
         }
     }
 

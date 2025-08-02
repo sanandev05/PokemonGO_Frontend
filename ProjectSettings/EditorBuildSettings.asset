@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/MainMenu.unity
     guid: 92eb03309ac213047a236bd1dd7cc6b6
   - enabled: 1
-    path: Assets/Scenes/Game.unity
+    path: Assets/UIAnimation/ExampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/BattleScene.unity
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/CaptureScene.unity
     guid: f8819428e24bf8f488cc3acae0d3ced5
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: 89c22b4f59dbdcc4facb9eb0b9d73510
   m_configObjects: {}
