@@ -24,10 +24,10 @@
     {
       "Annotation": "BuildPlayerDataGenerator Library/BuildPlayerData/Editor/TypeDb-All.json",
       "DisplayName": "BuildPlayerDataGenerator TypeDb-All",
-      "Action": "\"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.AspNetCore.Connections.Abstractions.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.AspNetCore.Http.Connections.Client.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.AspNetCore.Http.Connections.Common.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.AspNetCore.SignalR.Client.Core.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.AspNetCore.SignalR.Client.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.AspNetCore.SignalR.Common.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.Bcl.AsyncInterfaces.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.Bcl.TimeProvider.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.Extensions.DependencyInjection.Abstractions.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.Extensions.DependencyInjection.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.Extensions.Features.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.Extensions.Logging.Abstractions.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.Extensions.Logging.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.Extensions.Options.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\Microsoft.Extensions.Primitives.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\System.Diagnostics.DiagnosticSource.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\System.IO.Pipelines.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\System.Runtime.CompilerServices.Unsafe.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\System.Text.Encodings.Web.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\System.Text.Json.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\\System.Threading.Channels.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\\Unity.AI.Navigation.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.2.1\\Runtime\\Newtonsoft.Json.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.6\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\PackageCache\\com.unity.visualscripting@1.9.4\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Assets\\Plugins\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\UnityReferenceAssemblies\\unity-4.8-api\" -s=\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.44f1\\Editor\\Data\\UnityReferenceAssemblies\\unity-4.8-api\\Facades\" -s=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\ScriptAssemblies\" -s=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.2.1\\Runtime\" -s=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.6\\lib\\ReportGenerator\" -s=\"C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\Library\\PackageCache\\com.unity.visualscripting@1.9.4\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
+      "Action": "\"D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data\\Tools\\netcorerun\\netcorerun.exe\" \"D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.AspNetCore.Connections.Abstractions.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.AspNetCore.Http.Connections.Client.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.AspNetCore.Http.Connections.Common.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.AspNetCore.SignalR.Client.Core.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.AspNetCore.SignalR.Client.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.AspNetCore.SignalR.Common.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.AspNetCore.SignalR.Protocols.Json.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.Bcl.AsyncInterfaces.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.Bcl.TimeProvider.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.Extensions.DependencyInjection.Abstractions.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.Extensions.DependencyInjection.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.Extensions.Features.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.Extensions.Logging.Abstractions.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.Extensions.Logging.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.Extensions.Options.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\Microsoft.Extensions.Primitives.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\System.Diagnostics.DiagnosticSource.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\System.IO.Pipelines.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\System.Runtime.CompilerServices.Unsafe.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\System.Text.Encodings.Web.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\System.Text.Json.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\\System.Threading.Channels.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\\Assembly-CSharp.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\\Unity.AI.Navigation.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\\Unity.TextMeshPro.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\\Unity.Timeline.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\\Unity.VisualScripting.Core.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\\Unity.VisualScripting.Flow.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\\Unity.VisualScripting.State.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\\UnityEngine.TestRunner.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\\UnityEngine.UI.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\\nunit.framework.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.2.1\\Runtime\\Newtonsoft.Json.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.6\\lib\\ReportGenerator\\ReportGeneratorMerged.dll\" -a=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\PackageCache\\com.unity.visualscripting@1.9.4\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\\Unity.VisualScripting.Antlr3.Runtime.dll\" -s=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Assets\\Plugins\" -s=\"D:\\Program Files\\New folder\\Unity\\2022.3.44f1\\Editor\\Data\\Managed\\UnityEngine\" -s=\"D:\\Program Files\\New folder\\Unity\\2022.3.44f1\\Editor\\Data\\UnityReferenceAssemblies\\unity-4.8-api\" -s=\"D:\\Program Files\\New folder\\Unity\\2022.3.44f1\\Editor\\Data\\UnityReferenceAssemblies\\unity-4.8-api\\Facades\" -s=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\ScriptAssemblies\" -s=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\PackageCache\\com.unity.ext.nunit@1.0.6\\net35\\unity-custom\" -s=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\PackageCache\\com.unity.nuget.newtonsoft-json@3.2.1\\Runtime\" -s=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\PackageCache\\com.unity.testtools.codecoverage@1.2.6\\lib\\ReportGenerator\" -s=\"D:\\Unity Game Projects\\NEW\\PokemonGO_Unity3D\\Library\\PackageCache\\com.unity.visualscripting@1.9.4\\Runtime\\VisualScripting.Flow\\Dependencies\\NCalc\" -o=\"Library/BuildPlayerData/Editor\" -rn=\"\" -tn=\"TypeDb-All.json\"",
       "Inputs": [
-        "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
+        "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/netcorerun/netcorerun.exe",
+        "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPlayerDataGenerator/BuildPlayerDataGenerator.exe",
         "Assets/Plugins/Microsoft.AspNetCore.Connections.Abstractions.dll",
         "Assets/Plugins/Microsoft.AspNetCore.Http.Connections.Client.dll",
         "Assets/Plugins/Microsoft.AspNetCore.Http.Connections.Common.dll",
@@ -86,106 +86,106 @@
   ],
   "FileSignatures": [
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.BuildTools.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.BuildTools.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Core.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Core.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.CSharpSupport.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.CSharpSupport.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.DotNet.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.DotNet.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.NativeProgramSupport.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.NativeProgramSupport.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Stevedore.Program.exe"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Stevedore.Program.exe"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.TinyProfiler2.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.TinyProfiler2.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.GNU.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.GNU.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.LLVM.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.LLVM.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.VisualStudio.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.Xcode.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Toolchain.Xcode.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Tools.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.Tools.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.TundraBackend.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.TundraBackend.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.VisualStudioSolution.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Bee.VisualStudioSolution.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.Data.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/BeeBuildProgramCommon.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/BeeLocalCacheTool.exe"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/BeeLocalCacheTool.exe"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Newtonsoft.Json.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Newtonsoft.Json.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/NiceIO.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/NiceIO.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/PlayerBuildProgramLibrary.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/ScriptCompilationBuildProgram.exe"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/SharpYaml.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/SharpYaml.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Api.Attributes.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Api.Attributes.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Mdb.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Mdb.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Pdb.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Pdb.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Rocks.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Cecil.Rocks.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Api.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Api.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.BuildLogic.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.IL2CPP.Bee.IL2CPPExeCompileCppBuildProgram.Data.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Linker.Api.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Linker.Api.dll"
     },
     {
-      "File": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Options.dll"
+      "File": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline/Unity.Options.dll"
     },
     {
       "File": "Library/Bee/1900b0aEDbgSkipCompile-inputdata.json"
@@ -309,7 +309,7 @@
   ],
   "GlobSignatures": [
     {
-      "Path": "C:/Program Files/Unity/Hub/Editor/2022.3.44f1/Editor/Data/Tools/BuildPipeline"
+      "Path": "D:/Program Files/New folder/Unity/2022.3.44f1/Editor/Data/Tools/BuildPipeline"
     }
   ],
   "ContentDigestExtensions": [
@@ -339,6 +339,6 @@
   "SharedResources": [],
   "Scanners": [],
   "Identifier": "Library/Bee/1900b0aEDbgSkipCompile.dag.json",
-  "PayloadsFile": "C:/Users/Icomp/Documents/Unity Projects/PokemonGO_Frontend/Library/Bee/1900b0aEDbgSkipCompile.dag.payloads",
+  "PayloadsFile": "D:/Unity Game Projects/NEW/PokemonGO_Unity3D/Library/Bee/1900b0aEDbgSkipCompile.dag.payloads",
   "RelativePathToRoot": "../.."
 }

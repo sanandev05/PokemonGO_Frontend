@@ -75,9 +75,10 @@ public class BattleManager : MonoBehaviour
 
         // 3. Oyunçunun Pokémonu spawn et
         var trainer = _trainerService.GetLocalCurrentTrainerDto();
-        if (trainer.PokemonIds.Any())
+        var getTrainer = await _trainerService.GetByIdAsync(trainer.Id.ToString());
+        if (getTrainer.PokemonIds.Any())
         {
-            var firstPokemon = (await _pokemonService.GetAllAsync()).FirstOrDefault(p => p.Id == trainer.PokemonIds[0]);
+            var firstPokemon = (await _pokemonService.GetAllAsync()).FirstOrDefault(p => p.Id == getTrainer.PokemonIds[0]);
             if (firstPokemon != null)
             {
                 playerHP = firstPokemon.MaxHP; // Oyunçunun Pokémonunun HP-sini təyin et
@@ -113,11 +114,20 @@ public class BattleManager : MonoBehaviour
         {
             attackButton.interactable = false;
 
-            playerAnimator.SetTrigger("Attack");
+            if (playerAnimator != null)
+            {
+                playerAnimator.SetTrigger("Attack");
+            }
+            else
+            {
+                Debug.LogError("❌ playerAnimator is null! Pokémon animator not set.");
+                yield break;
+            }
+
             Instantiate(playerAttackParticle, wildPokemonSpawnPoint.transform.position + Vector3.up, Quaternion.identity);
 
             enemyHP -= Random.Range(10, playerAttackPower);
-            Log($"Your Pokemon attacked! The opponent heart: {enemyHP}");
+            Log($"Your Pokémon attacked! The opponent heart: {enemyHP}");
             UpdateUI();
 
             if (enemyHP <= 0)
@@ -134,6 +144,7 @@ public class BattleManager : MonoBehaviour
             attackButton.interactable = true;
         }
     }
+
 
 
 

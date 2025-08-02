@@ -2,6 +2,7 @@ using Newtonsoft.Json;
 using System;
 using TMPro;
 using UnityEngine;
+using System.Linq;
 using UnityEngine.UI;
 
 public class ProfileUI : MonoBehaviour
@@ -15,6 +16,7 @@ public class ProfileUI : MonoBehaviour
     public TextMeshProUGUI levelTxt;
     public TextMeshProUGUI nameTxt;
     public TextMeshProUGUI goldTxt;
+    public TextMeshProUGUI pokemonsText;
     public Slider slider;
 
     private GenericApiService<TrainerDTO> _trainerService;
@@ -28,8 +30,18 @@ public class ProfileUI : MonoBehaviour
     }
     public async void WhenClickedProfile()
     {
-        string trainerJson = PlayerPrefs.GetString("TrainerInfo");
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            PlayerNavMeshController navMesh = player.GetComponent<PlayerNavMeshController>();
+            if (navMesh != null)
+            {
+                navMesh.enabled = false;
+            }
+        }
 
+        string trainerJson = PlayerPrefs.GetString("TrainerInfo");
+        
         if (string.IsNullOrEmpty(trainerJson))
         {
             Debug.LogError("TrainerInfo is missing in PlayerPrefs.");
@@ -56,9 +68,10 @@ public class ProfileUI : MonoBehaviour
 
         FillUIData(getData);
 
+
     }
 
-    private void FillUIData(TrainerDTO trainerDTO)
+    private async void FillUIData(TrainerDTO trainerDTO)
     {
        nameTxt.text = trainerDTO.Name;
         levelTxt.text = trainerDTO.Level.ToString();
@@ -68,10 +81,36 @@ public class ProfileUI : MonoBehaviour
 
         slider.value = (float)trainerDTO.CurrentXP / trainerDTO.MaxXP;
 
+        var trainer = _trainerService.GetLocalCurrentTrainerDto();
+        var allPokemons = await _pokemonService.GetAllAsync();
+
+        var trainerPokemons = allPokemons
+            .Where(p => p.Id == trainer.Id)
+            .ToList();
+
+        if (trainerPokemons.Any())
+        {
+            pokemonsText.text = "Your Pokémon:\n" + string.Join("\n", trainerPokemons.Select(p => "• " + p.Name));
+        }
+        else
+        {
+            pokemonsText.text = "You don't own any Pokémon yet!";
+        }
         _profilePanel.SetActive(true);
+
+        
     }
     public void Close()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            PlayerNavMeshController navMesh = player.GetComponent<PlayerNavMeshController>();
+            if (navMesh != null)
+            {
+                navMesh.enabled = true;
+            }
+        }
         _profilePanel.SetActive(false);
     }
 }

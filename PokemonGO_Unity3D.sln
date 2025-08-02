@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.AI.Navigation.Editor"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.VisualStudio.Editor", "Unity.VisualStudio.Editor.csproj", "{A99C3616-95C7-71EA-7B0A-E31A96189020}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp-Editor", "Assembly-CSharp-Editor.csproj", "{EAEF58DC-B436-9E8D-4867-D2A1C5377FAA}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.TestTools.CodeCoverage.Editor.OpenCover.Model", "Unity.TestTools.CodeCoverage.Editor.OpenCover.Model.csproj", "{7AE68ECF-60FF-4475-A0E5-A120451A1900}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Rider.Editor", "Unity.Rider.Editor.csproj", "{6BA3C223-7A12-68C7-BF4A-CD84A4B1FDA9}"
@@ -153,6 +155,10 @@ Global
 		{A99C3616-95C7-71EA-7B0A-E31A96189020}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A99C3616-95C7-71EA-7B0A-E31A96189020}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A99C3616-95C7-71EA-7B0A-E31A96189020}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EAEF58DC-B436-9E8D-4867-D2A1C5377FAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EAEF58DC-B436-9E8D-4867-D2A1C5377FAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EAEF58DC-B436-9E8D-4867-D2A1C5377FAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EAEF58DC-B436-9E8D-4867-D2A1C5377FAA}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7AE68ECF-60FF-4475-A0E5-A120451A1900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7AE68ECF-60FF-4475-A0E5-A120451A1900}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AE68ECF-60FF-4475-A0E5-A120451A1900}.Release|Any CPU.ActiveCfg = Release|Any CPU

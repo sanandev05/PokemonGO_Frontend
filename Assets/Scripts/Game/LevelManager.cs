@@ -40,7 +40,6 @@ public class LevelManager : MonoBehaviour
             GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>().ShowNotification($"You got {XP} \n and level up!");
 
         }
-        notfication.SetActive(true);
         GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>().ShowNotification($"You got {XP}!");
 
         Debug.Log("XP after update: " + fetch.CurrentXP + " | Level: " + fetch.Level);

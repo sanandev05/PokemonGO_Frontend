@@ -87,7 +87,9 @@ public class ThrowBall : MonoBehaviour
 
         AddXPAndMoney();
         Destroy(collision.gameObject);   // Pokémon sil
-        Destroy(gameObject);             // Pokéball sil
+        Destroy(gameObject);
+        GameObject.FindGameObjectWithTag("GameManager").GetComponent<GameManager>().inCatchSequence = false;
+        // Pokéball sil
         SceneManager.LoadScene("Game");  // Oyun səhnəsinə qayıt
     }
 

@@ -24,6 +24,15 @@ public class NewUserRegistration : MonoBehaviour
     // This runs automatically when the script instance is being loaded.
     private void Awake()
     {
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            PlayerNavMeshController navMesh = player.GetComponent<PlayerNavMeshController>();
+            if (navMesh != null)
+            {
+                navMesh.enabled = false;
+            }
+        }
         // Check if the "TrainerInfo" key exists in PlayerPrefs.
         if (PlayerPrefs.HasKey("TrainerInfo"))
         {
@@ -55,6 +64,15 @@ public class NewUserRegistration : MonoBehaviour
             return;
         }
         StartCoroutine(RegisterTrainerProcess());
+        GameObject player = GameObject.FindGameObjectWithTag("Player");
+        if (player != null)
+        {
+            PlayerNavMeshController navMesh = player.GetComponent<PlayerNavMeshController>();
+            if (navMesh != null)
+            {
+                navMesh.enabled = true;
+            }
+        }
     }
 
     private IEnumerator RegisterTrainerProcess()
