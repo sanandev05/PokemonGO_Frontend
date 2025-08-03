@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{874F03DC-7049-451D-EB37-A42BA6484260}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\assets\\scripts\\controller\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{874F03DC-7049-451D-EB37-A42BA6484260}|Assembly-CSharp.csproj|c:\\users\\icomp\\documents\\unity projects\\pokemongo_frontend\\assets\\scripts\\controller\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{874F03DC-7049-451D-EB37-A42BA6484260}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\controller\\camerafollow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -55,7 +55,7 @@
       "RelativeMoniker": "D:0:0:{874F03DC-7049-451D-EB37-A42BA6484260}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\service\\genericapiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{874F03DC-7049-451D-EB37-A42BA6484260}|Assembly-CSharp.csproj|c:\\users\\icomp\\documents\\unity projects\\pokemongo_frontend\\assets\\scripts\\tournament\\tournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{874F03DC-7049-451D-EB37-A42BA6484260}|Assembly-CSharp.csproj|C:\\Users\\Icomp\\Documents\\Unity Projects\\PokemonGO_Frontend\\assets\\scripts\\tournament\\tournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{874F03DC-7049-451D-EB37-A42BA6484260}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\tournament\\tournament.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -142,8 +142,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Fights\\BattleManager.cs",
               "ViewState": "AgIAAKAAAAAAAAAAAAD4v7cAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:14:47.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T07:14:47.292Z"
             },
             {
               "$type": "Document",
@@ -155,8 +154,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SignalR\\PlayerClient.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAIwBUAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-02T08:33:07.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-02T08:33:07.845Z"
             },
             {
               "$type": "Document",
@@ -168,8 +166,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Controller\\PlayerNavMeshController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T07:20:36.583Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T07:20:36.583Z"
             },
             {
               "$type": "Document",
@@ -181,8 +178,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Controller\\PlayerData.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-30T03:50:51.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-30T03:50:51.022Z"
             },
             {
               "$type": "Document",
@@ -194,8 +190,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Nw.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T10:17:26.439Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T10:17:26.439Z"
             },
             {
               "$type": "Document",
@@ -207,8 +202,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Game\\GameManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T10:08:28.722Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T10:08:28.722Z"
             },
             {
               "$type": "Document",
@@ -220,8 +214,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Controller\\NewUserRegistration.cs",
               "ViewState": "AgIAAF0AAAAAAAAAAAAIwIQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T06:29:31.79Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T06:29:31.79Z"
             },
             {
               "$type": "Document",
@@ -233,8 +226,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Fights\\GymZone.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-29T18:56:42.166Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-29T18:56:42.166Z"
             },
             {
               "$type": "Document",
@@ -246,8 +238,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Game\\LevelManager.cs",
               "ViewState": "AgIAADoAAAAAAAAAAAAjwE4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T09:52:57.675Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T09:52:57.675Z"
             },
             {
               "$type": "Document",
@@ -272,8 +263,7 @@
               "RelativeToolTip": "Assets\\Scripts\\CatchingPoke\\CatchSceneManager.cs",
               "ViewState": "AgIAADAAAAAAAAAAAAAowDUAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-28T11:15:43.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-28T11:15:43.01Z"
             },
             {
               "$type": "Document",
@@ -285,8 +275,7 @@
               "RelativeToolTip": "Assets\\Scripts\\SignalR\\SignalRClient.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAQwDMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-01T08:23:34.744Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-01T08:23:34.744Z"
             },
             {
               "$type": "Document",
@@ -298,8 +287,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Service\\GenericApiService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-27T07:00:35.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-27T07:00:35.285Z"
             },
             {
               "$type": "Document",
@@ -311,8 +299,7 @@
               "RelativeToolTip": "Assets\\Scripts\\Tournament\\Tournament.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAtwEUAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-03T05:55:47.049Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-03T05:55:47.049Z"
             },
             {
               "$type": "Document",
