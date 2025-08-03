@@ -30,7 +30,7 @@ public class SignalRClient : MonoBehaviour
         try
         {
             await connection.StartAsync();
-            latestMessage = "Connected to Server!";
+            latestMessage = $"Connected to Server! \n {_trainerService.GetLocalCurrentTrainerDto().Name } joined !";
         }
         catch (System.Exception ex)
         {

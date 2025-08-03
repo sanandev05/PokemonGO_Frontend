@@ -4,6 +4,8 @@ public class CameraFollow : MonoBehaviour
 {
     public Transform target; // Oyunçuya bağlı kamera üçün
     public Vector3 offset = new Vector3(0, 5, -7);
+    public Transform  ortoPos;
+    public bool isOrthographic = false; // Ortoqrafik rejimdədirsə
 
     public float panSpeed = 20f;
     public float rotateSpeed = 70f;
@@ -14,32 +16,53 @@ public class CameraFollow : MonoBehaviour
 
     void Update()
     {
-        // Zoom (Mouse wheel)
-        float zoomChange = Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
-        currentZoom = Mathf.Clamp(currentZoom - zoomChange, 5f, 20f);
-
-        // Pan (WASD or arrow keys)
-        float horizontal = Input.GetAxis("Horizontal"); // A,D və ya sol, sağ oxları
-        float vertical = Input.GetAxis("Vertical");     // W,S və ya yuxarı, aşağı oxları
-
-        Vector3 panMovement = transform.right * horizontal + transform.forward * vertical;
-        panMovement.y = 0; // Y oxunda hərəkət etməsin (səth boyunca)
-        transform.position += panMovement * panSpeed * Time.deltaTime;
-
-        // Rotate (Mouse sağ klik basılı saxlayıb sürüşdür)
-        if (Input.GetMouseButton(1))
+        if (!isOrthographic)
         {
-            float mouseX = Input.GetAxis("Mouse X");
-            currentYaw += mouseX * rotateSpeed * Time.deltaTime;
+            // Zoom (Mouse wheel)
+            float zoomChange = Input.GetAxis("Mouse ScrollWheel") * zoomSpeed;
+            currentZoom = Mathf.Clamp(currentZoom - zoomChange, 5f, 20f);
+
+            // Pan (WASD or arrow keys)
+            float horizontal = Input.GetAxis("Horizontal"); // A,D və ya sol, sağ oxları
+            float vertical = Input.GetAxis("Vertical");     // W,S və ya yuxarı, aşağı oxları
+
+            Vector3 panMovement = transform.right * horizontal + transform.forward * vertical;
+            panMovement.y = 0; // Y oxunda hərəkət etməsin (səth boyunca)
+            transform.position += panMovement * panSpeed * Time.deltaTime;
+
+            // Rotate (Mouse sağ klik basılı saxlayıb sürüşdür)
+            if (Input.GetMouseButton(1))
+            {
+                float mouseX = Input.GetAxis("Mouse X");
+                currentYaw += mouseX * rotateSpeed * Time.deltaTime;
+            }
+
+            transform.rotation = Quaternion.Euler(30, currentYaw, 0); // 30 dərəcə yuxarı baxış, fırlanma yaw
+                                                                      // Kameranın mövqeyini oyunçuya görə yenilə (offset ilə zoom ilə)
+            if (target != null)
+            {
+                Vector3 desiredPosition = target.position - transform.forward * currentZoom + new Vector3(0, currentZoom / 2f, 0);
+                transform.position = Vector3.Lerp(transform.position, desiredPosition, Time.deltaTime * 5f);
+            }
         }
 
-        transform.rotation = Quaternion.Euler(30, currentYaw, 0); // 30 dərəcə yuxarı baxış, fırlanma yaw
+        
 
-        // Kameranın mövqeyini oyunçuya görə yenilə (offset ilə zoom ilə)
-        if (target != null)
+        if (Input.GetKeyDown(KeyCode.C))
         {
-            Vector3 desiredPosition = target.position - transform.forward * currentZoom + new Vector3(0, currentZoom / 2f, 0);
-            transform.position = Vector3.Lerp(transform.position, desiredPosition, Time.deltaTime * 5f);
+            isOrthographic = !isOrthographic; 
+            if (isOrthographic)
+            {
+                gameObject.GetComponent<Camera>().orthographic = true;
+                gameObject.GetComponent<Camera>().transform.position = ortoPos.transform.position;
+                gameObject.GetComponent<Camera>().transform.rotation = ortoPos.transform.rotation;
+                gameObject.GetComponent<Camera>().orthographicSize = 83.36f;
+            }
+            else
+            {
+                gameObject.GetComponent<Camera>().orthographic = false;
+                gameObject.GetComponent<Camera>().orthographicSize = 0;
+            }
         }
     }
 }

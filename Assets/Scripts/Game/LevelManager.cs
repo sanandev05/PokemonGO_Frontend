@@ -36,11 +36,7 @@ public class LevelManager : MonoBehaviour
             fetch.Level += 1;
             fetch.CurrentXP -= fetch.MaxXP;
             fetch.MaxXP += 100;
-            notfication.SetActive(true);
-            GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>().ShowNotification($"You got {XP} \n and level up!");
-
         }
-        GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>().ShowNotification($"You got {XP}!");
 
         Debug.Log("XP after update: " + fetch.CurrentXP + " | Level: " + fetch.Level);
 
@@ -57,8 +53,8 @@ public class LevelManager : MonoBehaviour
             var currentTrainerDto = _trainerService.GetLocalCurrentTrainerDto();
             currentTrainerDto.BadgeIds.Add(levelBadgeId);
             await _trainerService.UpdateAsync(currentTrainerDto,currentTrainerDto.Id);
-            notfication.SetActive(true);
-            GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>().ShowNotificationWitgImage("You got level 3 badge !","badge_lvl1");
+            var notfication = GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>();
+            notfication.ShowNotificationWitgImage("You got level 3 badge !", "badge_lvl1");
         }
         if (Level > 6)
         {
@@ -66,8 +62,8 @@ public class LevelManager : MonoBehaviour
             var currentTrainerDto = _trainerService.GetLocalCurrentTrainerDto();
             currentTrainerDto.BadgeIds.Add(levelBadgeId);
             await _trainerService.UpdateAsync(currentTrainerDto, currentTrainerDto.Id);
-            notfication.SetActive(true);
-            GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>().ShowNotificationWitgImage("You got level 6 badge !", "badge_lvl2");
+            var notfication = GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>();
+            notfication.ShowNotificationWitgImage("You got level 6 badge !", "badge_lvl2");
         }
         if (Level > 9)
         {
@@ -75,8 +71,8 @@ public class LevelManager : MonoBehaviour
             var currentTrainerDto = _trainerService.GetLocalCurrentTrainerDto();
             currentTrainerDto.BadgeIds.Add(levelBadgeId);
             await _trainerService.UpdateAsync(currentTrainerDto, currentTrainerDto.Id);
-            notfication.SetActive(true);
-            GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>().ShowNotificationWitgImage("You got level 9 badge !", "badge_lvl2");
+            var notfication = GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>();
+            notfication.ShowNotificationWitgImage("You got level 9 badge !", "badge_lvl3");
         }
     }
 

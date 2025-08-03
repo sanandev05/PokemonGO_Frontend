@@ -101,6 +101,9 @@ public class ThrowBall : MonoBehaviour
             LevelManager levelManager = lmObject.GetComponent<LevelManager>();
             levelManager.AddXPAndCheckXP(200);
             levelManager.AddMoney(40);
+           var notfication = GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>();
+            notfication.ShowNotification("You caught Pokemon successfully!\nYou gained 200 XP and 40 golds !");
+
         }
         else
         {

@@ -187,7 +187,8 @@ public class BattleManager : MonoBehaviour
             {
                 Debug.LogError("❌ LevelManager tapılmadı! Tag düzgün təyin olunmayıb?");
             }
-
+            var notfication = GameObject.FindGameObjectWithTag("Notfication").GetComponent<NotficationManager>();
+            notfication.ShowNotification("You won this battle !\nYou gained 500 XP and 150 golds !");
         }
 
         SceneManager.LoadScene("Game");

@@ -24,9 +24,13 @@ ScriptsOnlyBuild:
     - SignalRClient
     - Supercyan.FreeSample.AccessoryWearLogic
     - ThrowBall
+    - TournamentManager
     - TrainerProfileUI
     - UIAutoAnimation
     - WildPokemon
+    Unity.AI.Navigation.Editor.dll:
+    - Unity.AI.Navigation.Editor.NavMeshAssetManager
+    - Unity.AI.Navigation.Editor.NavigationWindow
     Unity.AI.Navigation.dll:
     - Unity.AI.Navigation.NavMeshSurface
     Unity.PlasticSCM.Editor.dll:
@@ -46,13 +50,13 @@ ScriptsOnlyBuild:
     - TMPro.TMP_SpriteAsset
     - TMPro.TMP_StyleSheet
     - TMPro.TextMeshProUGUI
-    Unity.Timeline.Editor.dll:
-    - TimelineProjectSettings
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -127,6 +131,9 @@ ScriptsOnlyBuild:
     fullTypeName: NewUserRegistration
     methodName: UpdateSelectedPokemon
   - assembly: Assembly-CSharp
+    fullTypeName: TournamentManager
+    methodName: CloseClicked
+  - assembly: Assembly-CSharp
     fullTypeName: ProfileUI
     methodName: Close
   - assembly: Assembly-CSharp
@@ -147,6 +154,9 @@ ScriptsOnlyBuild:
   - assembly: Assembly-CSharp
     fullTypeName: NewUserRegistration
     methodName: UpdateSelectedPokemon
+  - assembly: Assembly-CSharp
+    fullTypeName: TournamentManager
+    methodName: OkClicked
   sceneClasses:
     Assets/Scenes/BattleScene.unity:
     - Class: 1
@@ -180,27 +190,27 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1750}
+      Script: {instanceID: 16862}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 17002}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 18084}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 18612}
     - Class: 114
-      Script: {instanceID: 5556}
+      Script: {instanceID: 20672}
     - Class: 114
-      Script: {instanceID: 5752}
+      Script: {instanceID: 20868}
     - Class: 114
-      Script: {instanceID: 6164}
+      Script: {instanceID: 21280}
     - Class: 114
-      Script: {instanceID: 6326}
+      Script: {instanceID: 21442}
     - Class: 114
-      Script: {instanceID: 6670}
+      Script: {instanceID: 21786}
     - Class: 114
-      Script: {instanceID: 7014}
+      Script: {instanceID: 22130}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -255,11 +265,11 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 2056}
+      Script: {instanceID: 17170}
     - Class: 114
-      Script: {instanceID: 5752}
+      Script: {instanceID: 20868}
     - Class: 114
-      Script: {instanceID: 7072}
+      Script: {instanceID: 22188}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 135
@@ -314,85 +324,87 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1752}
+      Script: {instanceID: 16866}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 17002}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 17008}
     - Class: 114
-      Script: {instanceID: 2022}
+      Script: {instanceID: 17136}
     - Class: 114
-      Script: {instanceID: 2056}
+      Script: {instanceID: 17170}
     - Class: 114
-      Script: {instanceID: 2094}
+      Script: {instanceID: 17208}
     - Class: 114
-      Script: {instanceID: 2662}
+      Script: {instanceID: 17776}
     - Class: 114
-      Script: {instanceID: 2736}
+      Script: {instanceID: 17850}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 18084}
     - Class: 114
-      Script: {instanceID: 3136}
+      Script: {instanceID: 18250}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 3332}
+      Script: {instanceID: 18446}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 18612}
     - Class: 114
-      Script: {instanceID: 3676}
+      Script: {instanceID: 18790}
     - Class: 114
-      Script: {instanceID: 4526}
+      Script: {instanceID: 19640}
     - Class: 114
-      Script: {instanceID: 5236}
+      Script: {instanceID: 20350}
     - Class: 114
-      Script: {instanceID: 5322}
+      Script: {instanceID: 20436}
     - Class: 114
-      Script: {instanceID: 5360}
+      Script: {instanceID: 20474}
     - Class: 114
-      Script: {instanceID: 5466}
+      Script: {instanceID: 20582}
     - Class: 114
-      Script: {instanceID: 5482}
+      Script: {instanceID: 20598}
     - Class: 114
-      Script: {instanceID: 5556}
+      Script: {instanceID: 20672}
     - Class: 114
-      Script: {instanceID: 5738}
+      Script: {instanceID: 20854}
     - Class: 114
-      Script: {instanceID: 5752}
+      Script: {instanceID: 20868}
     - Class: 114
-      Script: {instanceID: 6018}
+      Script: {instanceID: 21134}
     - Class: 114
-      Script: {instanceID: 6142}
+      Script: {instanceID: 21258}
     - Class: 114
-      Script: {instanceID: 6164}
+      Script: {instanceID: 21280}
     - Class: 114
-      Script: {instanceID: 6212}
+      Script: {instanceID: 21328}
     - Class: 114
-      Script: {instanceID: 6326}
+      Script: {instanceID: 21442}
     - Class: 114
-      Script: {instanceID: 6670}
+      Script: {instanceID: 21786}
     - Class: 114
-      Script: {instanceID: 6806}
+      Script: {instanceID: 21922}
     - Class: 114
-      Script: {instanceID: 7014}
+      Script: {instanceID: 22130}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 22138}
     - Class: 114
-      Script: {instanceID: 7102}
+      Script: {instanceID: 22218}
     - Class: 114
-      Script: {instanceID: 7500}
+      Script: {instanceID: 22618}
     - Class: 114
-      Script: {instanceID: 7704}
+      Script: {instanceID: 22822}
     - Class: 114
-      Script: {instanceID: 7778}
+      Script: {instanceID: 22896}
     - Class: 114
-      Script: {instanceID: 7784}
+      Script: {instanceID: 22902}
     - Class: 114
-      Script: {instanceID: 8330}
+      Script: {instanceID: 23448}
     - Class: 114
-      Script: {instanceID: 39230}
+      Script: {instanceID: 39618}
     - Class: 114
-      Script: {instanceID: 39232}
+      Script: {instanceID: 39620}
+    - Class: 114
+      Script: {instanceID: 143948}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -428,7 +440,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 21
       Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
     - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
       Script: {instanceID: 0}
     - Class: 43
       Script: {instanceID: 0}
@@ -453,39 +469,39 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 17002}
     - Class: 114
-      Script: {instanceID: 1894}
+      Script: {instanceID: 17008}
     - Class: 114
-      Script: {instanceID: 2528}
+      Script: {instanceID: 17642}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 18084}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 18612}
     - Class: 114
-      Script: {instanceID: 4428}
+      Script: {instanceID: 19542}
     - Class: 114
-      Script: {instanceID: 4540}
+      Script: {instanceID: 19654}
     - Class: 114
-      Script: {instanceID: 4808}
+      Script: {instanceID: 19922}
     - Class: 114
-      Script: {instanceID: 5556}
+      Script: {instanceID: 20672}
     - Class: 114
-      Script: {instanceID: 6080}
+      Script: {instanceID: 21196}
     - Class: 114
-      Script: {instanceID: 6142}
+      Script: {instanceID: 21258}
     - Class: 114
-      Script: {instanceID: 6164}
+      Script: {instanceID: 21280}
     - Class: 114
-      Script: {instanceID: 6326}
+      Script: {instanceID: 21442}
     - Class: 114
-      Script: {instanceID: 6670}
+      Script: {instanceID: 21786}
     - Class: 114
-      Script: {instanceID: 7014}
+      Script: {instanceID: 22130}
     - Class: 114
-      Script: {instanceID: 8330}
+      Script: {instanceID: 23448}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -526,25 +542,25 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 1888}
+      Script: {instanceID: 17002}
     - Class: 114
-      Script: {instanceID: 2970}
+      Script: {instanceID: 18084}
     - Class: 114
-      Script: {instanceID: 3182}
+      Script: {instanceID: 18296}
     - Class: 114
-      Script: {instanceID: 3498}
+      Script: {instanceID: 18612}
     - Class: 114
-      Script: {instanceID: 5556}
+      Script: {instanceID: 20672}
     - Class: 114
-      Script: {instanceID: 6164}
+      Script: {instanceID: 21280}
     - Class: 114
-      Script: {instanceID: 6326}
+      Script: {instanceID: 21442}
     - Class: 114
-      Script: {instanceID: 6670}
+      Script: {instanceID: 21786}
     - Class: 114
-      Script: {instanceID: 7022}
+      Script: {instanceID: 22138}
     - Class: 114
-      Script: {instanceID: 7500}
+      Script: {instanceID: 22618}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -570,28 +586,22 @@ ScriptsOnlyBuild:
     className: HitImpactEffectsPreview
   - hash:
       serializedVersion: 2
-      Hash: 6868f45bd1145ea7053b7a7f7b41edb8
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: GoogleMap
-  - hash:
-      serializedVersion: 2
       Hash: e207c223b905a901443f359efd131d0f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: BattleManager
   - hash:
       serializedVersion: 2
-      Hash: b05e33cd60c1774b2f410b6a6cea2be6
+      Hash: 6868f45bd1145ea7053b7a7f7b41edb8
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: GoogleMap
+  - hash:
+      serializedVersion: 2
+      Hash: 2ea65b6dab3d92a8b626fa3ed542b598
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: ProfileUI
-  - hash:
-      serializedVersion: 2
-      Hash: fbcce0173e95d913331f7503f6b16b82
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.ImageEffects
-    className: Tonemapping
   - hash:
       serializedVersion: 2
       Hash: d6927064a48e563b9e0ca00a17defd11
@@ -600,28 +610,22 @@ ScriptsOnlyBuild:
     className: Blur
   - hash:
       serializedVersion: 2
-      Hash: 4647875513da9dc94660430bee62fcad
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.ImageEffects
-    className: ScreenSpaceAmbientOcclusion
-  - hash:
-      serializedVersion: 2
       Hash: 8b1466738f27ac86c7728abc182e19e1
     assemblyName: Assembly-CSharp
     namespaceName: UnityStandardAssets.ImageEffects
     className: Bloom
   - hash:
       serializedVersion: 2
+      Hash: fbcce0173e95d913331f7503f6b16b82
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: Tonemapping
+  - hash:
+      serializedVersion: 2
       Hash: 9d60ae7ca8f7c7e3a671dcfeee31676f
     assemblyName: Assembly-CSharp
     namespaceName: UnityStandardAssets.ImageEffects
     className: ContrastStretch
-  - hash:
-      serializedVersion: 2
-      Hash: aad54bd45bce617ebbfd120b6054c5b7
-    assemblyName: Assembly-CSharp
-    namespaceName: UnityStandardAssets.ImageEffects
-    className: DepthOfField
   - hash:
       serializedVersion: 2
       Hash: 37e49ed1f12c8381dbd421581fe50eb0
@@ -636,10 +640,22 @@ ScriptsOnlyBuild:
     className: MotionBlur
   - hash:
       serializedVersion: 2
+      Hash: aad54bd45bce617ebbfd120b6054c5b7
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: DepthOfField
+  - hash:
+      serializedVersion: 2
       Hash: f322ea0c998dcad85014d07b7122213a
     assemblyName: Assembly-CSharp
     namespaceName: UnityStandardAssets.ImageEffects
     className: NoiseAndScratches
+  - hash:
+      serializedVersion: 2
+      Hash: 4647875513da9dc94660430bee62fcad
+    assemblyName: Assembly-CSharp
+    namespaceName: UnityStandardAssets.ImageEffects
+    className: ScreenSpaceAmbientOcclusion
   - hash:
       serializedVersion: 2
       Hash: 64fcfd9f055c97655e2ebda28d718956
@@ -1386,6 +1402,12 @@ ScriptsOnlyBuild:
     className: ShaderPropAnimator
   - hash:
       serializedVersion: 2
+      Hash: 718388220cbe5e443575593f5f5ba08e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: RemotePlayer
+  - hash:
+      serializedVersion: 2
       Hash: 796e5c0bb6042ef9e63ec97298bea70a
     assemblyName: Assembly-CSharp
     namespaceName: UnityStandardAssets.ImageEffects
@@ -1788,6 +1810,12 @@ ScriptsOnlyBuild:
     className: PlayModeRunnerCallback
   - hash:
       serializedVersion: 2
+      Hash: 359a163207fb1c4f299e9a9533ca5f4e
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: UnityMainThreadDispatcher
+  - hash:
+      serializedVersion: 2
       Hash: afb7b65d28d5a7423e69a1b076be0064
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
@@ -2040,16 +2068,10 @@ ScriptsOnlyBuild:
     className: UnityOnSliderValueChangedMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 359a163207fb1c4f299e9a9533ca5f4e
+      Hash: bd1230e1d0f876248d1c8638ee83ba0e
     assemblyName: Assembly-CSharp
     namespaceName: 
-    className: UnityMainThreadDispatcher
-  - hash:
-      serializedVersion: 2
-      Hash: 718388220cbe5e443575593f5f5ba08e
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: RemotePlayer
+    className: TournamentManager
   platform: 19
   scenePathNames:
   - Assets/Scenes/MainMenu.unity
@@ -2057,4 +2079,4 @@ ScriptsOnlyBuild:
   - Assets/Scenes/BattleScene.unity
   - Assets/Scenes/CaptureScene.unity
   - Assets/Scenes/Game.unity
-  playerPath: D:/PokemonGame EXE/PokemonGO_Unity3D.exe
+  playerPath: C:/Users/Icomp/Desktop/Game/PokemonGO_Unity3D.exe

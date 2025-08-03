@@ -4,7 +4,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
     public bool inCatchSequence = false;
 
     private void Awake()
@@ -19,7 +18,13 @@ public class GameManager : MonoBehaviour
         Instance = this;
         DontDestroyOnLoad(gameObject); // Scene dəyişsə də GameManager itməsin
     }
-
+    private void Update()
+    {
+        if ((Input.GetKeyDown(KeyCode.Escape)))
+        {
+            SceneManager.LoadScene("Game");
+        }
+    }
 
     public void StartCatchSequence(WildPokemon targetPokemon)
     {
