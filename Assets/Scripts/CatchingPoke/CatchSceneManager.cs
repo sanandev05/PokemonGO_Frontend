@@ -3,8 +3,8 @@
 public class CatchSceneManager : MonoBehaviour
 {
     public Transform pokemonSpawnPoint;
-    public Transform pokeballHoldPoint; // Pokéball ilk burda görünəcək
-    public GameObject fallbackPokemonPrefab; // Əgər Load alınmasa, default
+    public Transform pokeballHoldPoint; // Pokéball will first appear here
+    public GameObject fallbackPokemonPrefab; // Default if loading fails
     public GameObject pokeballPrefab;
 
     private GameObject spawnedPokemon;
@@ -16,7 +16,7 @@ public class CatchSceneManager : MonoBehaviour
 
     void Start()
     {
-        // Pokémon məlumatlarını al
+        // Retrieve Pokémon data
         string prefabName = PlayerPrefs.GetString("TargetPokemon_PrefabName", "Pikachu");
 
         GameObject pokemonPrefab = Resources.Load<GameObject>("PokemonPrefabs/" + prefabName);
@@ -27,10 +27,10 @@ public class CatchSceneManager : MonoBehaviour
             pokemonPrefab = fallbackPokemonPrefab;
         }
 
-        // Pokémon-u spawn et
+        // Spawn the Pokémon
         spawnedPokemon = Instantiate(pokemonPrefab, pokemonSpawnPoint.position, Quaternion.identity);
 
-        // Pokéball-u əlinə ver
+        // Place the Pokéball in hand
         SpawnPokeball();
     }
 
@@ -53,7 +53,7 @@ public class CatchSceneManager : MonoBehaviour
             ThrowPokeball(dragVector);
         }
 
-        // Pokéball-u kamera qarşısında izlət
+        // Keep the Pokéball in front of the camera
         if (isDragging)
         {
             currentPokeball.transform.position = pokeballHoldPoint.position;
@@ -63,9 +63,9 @@ public class CatchSceneManager : MonoBehaviour
     void SpawnPokeball()
     {
         currentPokeball = Instantiate(pokeballPrefab, pokeballHoldPoint.position, Quaternion.identity);
-        currentPokeball.transform.SetParent(null); // Hierarchy-də sərbəst olsun
+        currentPokeball.transform.SetParent(null); // Keep it free in the hierarchy
         Rigidbody rb = currentPokeball.GetComponent<Rigidbody>();
-        rb.isKinematic = true; // Atana qədər hərəkətsiz
+        rb.isKinematic = true; // Immobile until thrown
     }
 
     void ThrowPokeball(Vector3 dragVector)
@@ -76,6 +76,6 @@ public class CatchSceneManager : MonoBehaviour
         Vector3 throwDir = Camera.main.transform.forward + Camera.main.transform.up * 0.5f;
         rb.AddForce(throwDir.normalized * dragVector.magnitude * throwForceMultiplier*Time.deltaTime);
 
-        currentPokeball = null; // Yeni Pokéball doğmaq üçün hazır et
+        currentPokeball = null; // Prepare for a new Pokéball to spawn
     }
 }
